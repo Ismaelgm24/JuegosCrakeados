@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" contenido="width=device-width, initial-scale=1.0">
+	<title>Juegos gratis</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+	
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<a href="#" class="logo">Juegos Gratis<span>.</span></a>
+			<ul class="menu-links">
+				<span id="close-menu-btn" class="material-symbols-outlined">close</span>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Productos</a></li>
+				<li><a href="#">Contacto</a></li>
+				<li><a href="#">Cuestionario</a></li>
+				<li><a href="#">RUMANO</a></li>
+			</ul>
+			<span id="menu-btn" class="material-symbols-outlined">menu</span>
+			</nav>
+	</header>
+	<section class="section">
+	<div class="contenido">
+		<h1>Empieza tu dia craqueando un juego</h1>
+		<p>Los juegos piratas son aquellos que han sido "crackeados"
+		para evadir la gestión de derechos digitales (DRM), una tecnología 
+		diseñada para proteger los contenidos con derechos de autor. Al hacerlo, 
+		permiten a los usuarios acceder y jugar a los títulos sin pagar a sus 
+		desarrolladores o distribuidores.</p>
+	<button><a class="video" href="https://www.youtube.com/"><B>RUMANO</B></a></button>
+	<br><br>
+	<img class="QR" src="QR.png">
+</div>
+</section>
+	<script>
+		const header = document.querySelector("header");
+		const menuBtn = document.querySelector("#menu-btn");
+		const closeMenuBtn = document.querySelector("#close-menu-btn");
+		
+		// Abre el menu en el movil con un toque
+		menuBtn.addEventListener("click", () => {
+				header.classList.toggle("show-mobile-menu");
+		})
+		// Cierra el menu en el movil con un toque
+		closeMenuBtn.addEventListener("click", () => {
+				menuBtn.click();
+		})
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+	
+		gtag('config', 'UA-XXXXXX-X');
+	</script>
+</body>
+</html>
